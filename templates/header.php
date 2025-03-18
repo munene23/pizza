@@ -21,6 +21,52 @@
             padding: 20px;
 
         }
+        /* Style for the pizza image within the card */
+.pizza {
+  /* Maintain the circular shape of the pizza image */
+  border-radius: 50%;
+  
+  /* Set a fixed size that fits well within the card (adjust as needed) */
+  width: 200px;
+  height: 200px;
+  
+  /* Center the image horizontally */
+  display: block;
+  margin: 0 auto 10px auto; /* Top, right, bottom, left margin */
+  
+  /* Add a subtle border to complement the card design */
+  border: 3px solid #ff6347; /* Tomato red to match pizza sauce */
+  
+  /* Add a slight shadow to match the card's z-depth effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  /* Ensure the image doesn't exceed its natural dimensions */
+  object-fit: cover;
+}
+
+/* Hover effect for interactivity */
+.pizza:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .pizza {
+    width: 150px;
+    height: 150px;
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pizza {
+    width: 120px;
+    height: 120px;
+    border-width: 1px;
+  }
+}
     </style>
 </head>
 

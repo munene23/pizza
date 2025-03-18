@@ -34,10 +34,12 @@ $pizzas = mysqli_fetch_all($result, MYSQLI_ASSOC);
             <div class="col s6 md3">
 
                 <div class="card z-depth 0">
+                    <!-- <img src="img/pizza3.jpg" alt="" class="pizza"> -->
                     <div class="card-content center">
                         <h6><?php
                         echo htmlspecialchars($pizza['title']);
                         ?> </h6>
+                                            <img src="img/pizza3.jpg" alt="" class="pizza">
 
                         <ul>
                             <?php foreach (explode(',', $pizza['ingredients']) as $ing) { ?>
